@@ -16,7 +16,7 @@
      No URL here? The app asks for it on first open and remembers it in this
      browser. You can also open  yoursite.com/?backend=<URL>  once to set it.
      Only the public web-app URL goes here. Never put API keys in this file. */
-  const BACKEND_URL = '';   // ← paste your GAS /exec URL here (leave empty when deployed in GAS)
+  const BACKEND_URL = 'https://script.google.com/macros/s/AKfycbzCmW785Px_1_Aw-Paa0mjqKdoETresadSkU0vSU4kfeMUOeu6mTBEV1V4L2VeXBbV2Mw/exec';   // ← paste your GAS /exec URL here (leave empty when deployed in GAS)
 
   const __lsGet = (k) => { try { return localStorage.getItem(k) || ''; } catch (e) { return ''; } };
   const __okUrl = (u) => /^https:\/\/script\.google(usercontent)?\.com\/.+/.test(String(u || '').trim());
